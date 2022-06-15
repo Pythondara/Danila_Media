@@ -4,4 +4,4 @@ from .models import Login_page
 
 def index(request):
     news = Login_page.objects.all()
-    return render(request, 'login_page/index.html', {'title': 'Тут будет логин пейдж'})
+    return render(request, 'login_page/base_login_page.html', {'title': 'Тут будет логин пейдж'})
