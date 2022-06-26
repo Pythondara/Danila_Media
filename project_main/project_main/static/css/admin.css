@@ -1,0 +1,50 @@
+#header,
+.module h2, .module caption, .inline-group h2{
+    background: #1a237e;
+}
+#branding h1, #branding h1 a:link, #branding h1 a:visited {
+    color: #ffff00;
+}
+#user-tools{
+    color: #ffff00;
+}
+
+
+#user-tools a,
+ a:link, a:visited{
+    color:#ffff00;
+}
+
+
+.dashboard #content{
+    color: #ffff00;
+}
+
+
+#content{
+    color: #ffff00;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "Roboto","Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
+    color: #ffff00;
+    background: #ffff00;
+}
+
+
+h1{
+    color: #1a237e;
+}
+
+#content-related .module {
+    background: #1a237e;
+}
+
+#content-related{
+    background: #1a237e;
+
+}

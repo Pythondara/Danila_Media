@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Main_page
+from project_main.utils import MyMixin  # Import ur Mixin there
 
 
 def index(request):
