@@ -10,12 +10,19 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item"><a class="nav-link active" aria-current="page" href="{% url 'home' %}">Категории</a>
             </li>
+            {% if request.user.is_authenticated %}
             <li class="nav-item"><a class="nav-link active" aria-current="page" href="{% url 'home' %}">Добавить фото
                 члена</a></li>
-
+            {% endif %}
         </ul>
+
         <span class="navbar-text">
-        <a href="{% url 'register' %}">Register</a> | <a href="{% url 'login' %}">Login</a>
+            {% if request.user.is_authenticated %}
+            Добро пожаловать, {{ user.username }} | <a href="{% url 'logout' %}">Logout</a>
+            {% else %}
+            <a href="{% url 'register' %}">Register</a> | <a href="{% url 'login' %}">Login</a>
+            {% endif %}
+
       </span>
     </div>
 </nav>
